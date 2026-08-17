@@ -29,7 +29,7 @@ jobs:
         run: python scripts/demo.py
       - name: Build wheel
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
-        run: python -m pip wheel . --no-deps --no-build-isolation --wheel-dir dist
+        run: python -m pip wheel . --no-deps --wheel-dir dist
       - name: Upload wheel
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
         uses: actions/upload-artifact@v4
