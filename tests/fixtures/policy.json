@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "blocked_labels": ["deferred", "duplicate", "wontfix"],
+  "accepted_labels": ["accepted"],
+  "require_acceptance": true,
+  "self_filed_requires_acceptance": true,
+  "max_actor_open_prs": 4,
+  "snapshot_freshness_hours": 24,
+  "required_checks": ["unit-tests", "lint"]
+}

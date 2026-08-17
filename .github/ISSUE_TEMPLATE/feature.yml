@@ -1,0 +1,26 @@
+name: Feature proposal
+description: Propose a focused improvement to contribution safety or evidence quality.
+title: "proposal: "
+labels: [proposal]
+body:
+  - type: textarea
+    id: failure-mode
+    attributes:
+      label: Contribution failure mode
+      description: What real mistake or unsupported claim would this prevent?
+    validations:
+      required: true
+  - type: textarea
+    id: contract
+    attributes:
+      label: Proposed contract
+      description: Describe inputs, outputs, and the fail-closed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Verification approach
+      description: What deterministic tests would establish the behavior?
+    validations:
+      required: true

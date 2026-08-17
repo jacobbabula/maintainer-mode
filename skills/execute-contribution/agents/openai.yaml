@@ -1,0 +1,4 @@
+interface:
+  display_name: "Execute Contribution"
+  short_description: "Turn an accepted issue into a focused PR"
+  default_prompt: "Use $execute-contribution to implement this accepted GitHub issue with verified scope and attribution."

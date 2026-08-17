@@ -1,0 +1,18 @@
+{
+  "schema": "maintainer-mode.snapshot/v1",
+  "captured_at": "2026-08-16T12:00:00Z",
+  "repository": "example/project",
+  "actor": {"login": "contributor"},
+  "actor_open_prs": 1,
+  "issue": {
+    "number": 43,
+    "title": "Add another implementation",
+    "state": "OPEN",
+    "author": {"login": "contributor"},
+    "assignees": [{"login": "someone-else"}],
+    "labels": [{"name": "deferred"}]
+  },
+  "candidate_pull_requests": [
+    {"number": 99, "title": "Existing fix", "state": "OPEN", "url": "https://example.invalid/pr/99"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "maintainer-mode",
+  "version": "0.1.0",
+  "description": "Turn GitHub issues into defensible pull requests with policy gates, duplicate checks, and evidence-backed test claims.",
+  "author": {
+    "name": "jacobbabula"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Maintainer Mode",
+    "shortDescription": "Ship open-source PRs without invented certainty.",
+    "longDescription": "An evidence-first contribution workflow for Codex: inspect repository policy, screen issue and duplicate risk, implement focused changes, record privacy-preserving verification receipts, and follow up on reviews without unauthorized public actions.",
+    "developerName": "jacobbabula",
+    "category": "Developer Tools",
+    "capabilities": ["skills", "scripts"],
+    "defaultPrompt": "Use Maintainer Mode to assess this GitHub issue and tell me whether it is ready, needs clarification, or should be stopped."
+  }
+}
