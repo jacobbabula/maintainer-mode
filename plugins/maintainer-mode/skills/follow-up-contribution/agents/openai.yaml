@@ -1,0 +1,4 @@
+interface:
+  display_name: "Follow Up Contribution"
+  short_description: "Check CI and reviews without noisy polling"
+  default_prompt: "Use $follow-up-contribution to inspect this pull request and handle the next maintainer action."

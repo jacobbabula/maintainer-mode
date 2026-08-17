@@ -23,7 +23,7 @@ dependencies = []
 maintainer-mode = "maintainer_mode.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["plugins/maintainer-mode/src"]
 
 [tool.coverage.run]
 branch = true

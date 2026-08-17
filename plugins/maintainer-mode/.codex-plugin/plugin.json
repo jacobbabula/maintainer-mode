@@ -25,7 +25,7 @@
       "Inspect this pull request for the next action."
     ],
     "brandColor": "#101828",
-    "composerIcon": "./assets/maintainer-mode-mark.svg",
-    "logo": "./assets/maintainer-mode-mark.svg"
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
   }
 }

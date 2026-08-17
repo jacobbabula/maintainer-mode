@@ -8,4 +8,7 @@ Initial public release.
 - Add read-only GitHub snapshots and deterministic `READY`, `ASK`, and `STOP` gates.
 - Add privacy-preserving, integrity-checked execution receipts.
 - Reject evidence reports assembled from different commits or worktree contents.
-- Add a zero-dependency CLI, disposable demo, cross-platform CI, and 15 regression tests.
+- Add a zero-dependency CLI, disposable demo, cross-platform CI, and 20 regression tests.
+- Add a repository marketplace with a self-contained installable plugin bundle.
+- Add copy-paste installation, a 30-second proof demo, and a compact failure comparison.
+- Add a pinned HOL Plugin Scanner gate for ecosystem listing readiness.

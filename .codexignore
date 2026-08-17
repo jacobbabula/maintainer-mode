@@ -1,0 +1,12 @@
+.git/
+.github/
+.venv/
+.venv-release/
+build/
+dist/
+tests/
+tmp/
+assets/demo-frames/
+scripts/render_demo.py
+*.pyc
+__pycache__/

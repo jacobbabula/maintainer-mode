@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prove Contribution"
+  short_description: "Build a tamper-evident PR evidence packet"
+  default_prompt: "Use $prove-contribution to verify this change and produce an honest PR-ready evidence report."

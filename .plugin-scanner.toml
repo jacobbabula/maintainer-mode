@@ -1,0 +1,10 @@
+[scanner]
+profile = "public-marketplace"
+ignore_paths = [
+  ".venv-release/**",
+  "build/**",
+  "dist/**",
+  "tests/**",
+  "tmp/**",
+  "scripts/render_demo.py",
+]

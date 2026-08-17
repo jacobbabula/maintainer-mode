@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage Contribution"
+  short_description: "Check policy, duplicates, and readiness"
+  default_prompt: "Use $triage-contribution to decide whether this GitHub issue is safe and worthwhile to pursue."

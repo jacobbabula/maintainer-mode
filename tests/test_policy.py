@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT / "plugins" / "maintainer-mode" / "src"))
 
 from maintainer_mode.models import Decision  # noqa: E402
 from maintainer_mode.policy import ContributionPolicy, evaluate_gate, render_gate_markdown  # noqa: E402

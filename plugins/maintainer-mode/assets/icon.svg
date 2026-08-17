@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Maintainer Mode</title>
+  <desc id="desc">A dark shield containing a white check and amber branch nodes.</desc>
+  <path fill="#101828" d="M64 7 113 25v34c0 30-18 52-49 63C33 111 15 89 15 59V25L64 7Z"/>
+  <path fill="none" stroke="#F7B84B" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M42 39v19c0 9 7 16 16 16h28"/>
+  <circle cx="42" cy="36" r="8" fill="#F7B84B"/>
+  <circle cx="89" cy="74" r="8" fill="#F7B84B"/>
+  <path fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="m42 87 12 12 31-35"/>
+</svg>

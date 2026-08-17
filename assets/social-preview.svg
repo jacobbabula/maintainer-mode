@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Maintainer Mode</title>
+  <desc id="desc">Evidence gates for AI-generated pull requests.</desc>
+  <rect width="1280" height="640" fill="#0B1220"/>
+  <path d="M0 96H1280M0 544H1280" stroke="#253047" stroke-width="2"/>
+  <g opacity=".22" stroke="#34425C" stroke-width="1">
+    <path d="M96 0V640M192 0V640M288 0V640M384 0V640M480 0V640M576 0V640M672 0V640M768 0V640M864 0V640M960 0V640M1056 0V640M1152 0V640"/>
+  </g>
+
+  <g transform="translate(92 132) scale(2.1)">
+    <path fill="#F7B84B" d="M64 7 113 25v34c0 30-18 52-49 63C33 111 15 89 15 59V25L64 7Z"/>
+    <path fill="none" stroke="#101828" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M42 39v19c0 9 7 16 16 16h28"/>
+    <circle cx="42" cy="36" r="8" fill="#101828"/>
+    <circle cx="89" cy="74" r="8" fill="#101828"/>
+    <path fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="m42 87 12 12 31-35"/>
+  </g>
+
+  <text x="412" y="210" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="76" font-weight="750">Maintainer Mode</text>
+  <text x="416" y="278" fill="#C7D2E5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="31">Evidence gates for AI-generated pull requests.</text>
+
+  <g transform="translate(416 342)" font-family="Cascadia Mono, Consolas, monospace" font-size="24" font-weight="700">
+    <rect width="132" height="54" rx="9" fill="#352B1B" stroke="#F7B84B"/>
+    <text x="66" y="35" fill="#F7B84B" text-anchor="middle">ASK</text>
+    <path d="M150 27h50" stroke="#65728A" stroke-width="4" stroke-linecap="round"/>
+    <path d="m190 17 12 10-12 10" fill="none" stroke="#65728A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="222" width="154" height="54" rx="9" fill="#132E29" stroke="#55D6A8"/>
+    <text x="299" y="35" fill="#55D6A8" text-anchor="middle">READY</text>
+    <path d="M394 27h50" stroke="#65728A" stroke-width="4" stroke-linecap="round"/>
+    <path d="m434 17 12 10-12 10" fill="none" stroke="#65728A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="466" width="178" height="54" rx="9" fill="#152A3D" stroke="#76C7FF"/>
+    <text x="555" y="35" fill="#76C7FF" text-anchor="middle">PROVEN</text>
+  </g>
+
+  <text x="96" y="594" fill="#93A3BA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">Policy-aware · duplicate-safe · exact-tree verification</text>
+  <text x="1184" y="594" fill="#F7B84B" font-family="Cascadia Mono, Consolas, monospace" font-size="22" text-anchor="end">github.com/jacobbabula/maintainer-mode</text>
+</svg>

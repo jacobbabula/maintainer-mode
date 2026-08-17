@@ -7,12 +7,13 @@ import json
 import subprocess
 import sys
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+PLUGIN_ROOT = ROOT / "plugins" / "maintainer-mode"
+sys.path.insert(0, str(PLUGIN_ROOT / "src"))
 
 from maintainer_mode.evidence import build_report, collect_receipts, run_and_record  # noqa: E402
 from maintainer_mode.policy import ContributionPolicy, evaluate_gate, render_gate_markdown  # noqa: E402
@@ -28,8 +29,19 @@ def main() -> int:
     policy = ContributionPolicy.from_dict(
         json.loads((fixtures / "policy.json").read_text(encoding="utf-8"))
     )
-    captured = datetime.fromisoformat(snapshot["captured_at"].replace("Z", "+00:00"))
-    print(render_gate_markdown(evaluate_gate(snapshot, policy, now=captured), snapshot))
+    now = datetime.now(timezone.utc)
+    print("MAINTAINER MODE / 30-SECOND PROOF")
+    print("=================================")
+
+    print("\n[1/3] Stale issue state")
+    snapshot["captured_at"] = (now - timedelta(hours=49)).isoformat()
+    print(render_gate_markdown(evaluate_gate(snapshot, policy, now=now), snapshot))
+
+    print("[2/3] Fresh, accepted task")
+    snapshot["captured_at"] = now.isoformat()
+    print(render_gate_markdown(evaluate_gate(snapshot, policy, now=now), snapshot))
+
+    print("[3/3] Checks bound to one exact tree")
 
     with tempfile.TemporaryDirectory(prefix="maintainer-mode-demo-") as directory:
         repo = Path(directory) / "sample-project"
@@ -44,7 +56,7 @@ def main() -> int:
 
         checks = {
             "unit-tests": [sys.executable, "-c", "from answer import answer; assert answer() == 42"],
-            "syntax": [
+            "lint": [
                 sys.executable,
                 "-c",
                 "import ast,pathlib; ast.parse(pathlib.Path('answer.py').read_text())",
@@ -52,7 +64,8 @@ def main() -> int:
         }
         for label, command in checks.items():
             code, path, _, _ = run_and_record(repo, label, command, receipt_dir=receipts)
-            print(f"{label}: exit={code} receipt={path.name}")
+            status = "PASS" if code == 0 else "FAIL"
+            print(f"  {status}  {label:<12} receipt={path.name}")
 
         report, proven = build_report(collect_receipts(receipts), list(checks))
         print("\n" + report)

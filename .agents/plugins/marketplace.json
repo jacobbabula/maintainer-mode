@@ -1,0 +1,20 @@
+{
+  "name": "maintainer-mode",
+  "interface": {
+    "displayName": "Maintainer Mode"
+  },
+  "plugins": [
+    {
+      "name": "maintainer-mode",
+      "source": {
+        "source": "local",
+        "path": "./plugins/maintainer-mode"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
